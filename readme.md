@@ -7,7 +7,7 @@ Escapes are considered to be static, so you should probably use this package in 
 ## Install
 
 ```sh
-npm install --save zeptomatch-is-static
+npm install zeptomatch-is-static
 ```
 
 ## Usage
