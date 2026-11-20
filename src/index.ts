@@ -1,17 +1,13 @@
 
 /* MAIN */
 
-const isStatic = (() => {
+const re = /^(?:\\$|\\.|[^*?!^{}[\]\\])*$/s;
 
-  const re = /^(?:\\$|\\.|[^*?!^{}[\]\\])*$/s;
+const isStatic =  ( glob: string ): boolean => {
 
-  return ( glob: string ): boolean => {
+  return re.test ( glob );
 
-    return re.test ( glob );
-
-  };
-
-})();
+};
 
 /* EXPORT */
 
